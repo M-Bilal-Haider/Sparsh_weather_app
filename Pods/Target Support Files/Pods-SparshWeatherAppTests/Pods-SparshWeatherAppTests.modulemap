@@ -1,0 +1,6 @@
+framework module Pods_SparshWeatherAppTests {
+  umbrella header "Pods-SparshWeatherAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

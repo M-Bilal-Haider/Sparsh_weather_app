@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C0F6EC32BD7A1826B943B1 /* Pods_SparshWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929CDDC1AD47C74EB7A33E3E /* Pods_SparshWeatherApp.framework */; };
+		154DDCEC2BAC3E3300F657A9 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DDCEB2BAC3E3300F657A9 /* WeatherViewModel.swift */; };
+		154DDCEF2BAC3E6D00F657A9 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DDCEE2BAC3E6D00F657A9 /* WeatherData.swift */; };
+		154DDCF52BAC3EEF00F657A9 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154DDCF42BAC3EEF00F657A9 /* WeatherView.swift */; };
+		15E2D89A2BAC191700AD6181 /* SparshWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D8992BAC191700AD6181 /* SparshWeatherAppApp.swift */; };
+		15E2D89C2BAC191700AD6181 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D89B2BAC191700AD6181 /* ContentView.swift */; };
+		15E2D89E2BAC191900AD6181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E2D89D2BAC191900AD6181 /* Assets.xcassets */; };
+		15E2D8A12BAC191900AD6181 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E2D8A02BAC191900AD6181 /* Preview Assets.xcassets */; };
+		15E2D8AB2BAC191A00AD6181 /* SparshWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D8AA2BAC191A00AD6181 /* SparshWeatherAppTests.swift */; };
+		15E2D8B52BAC191A00AD6181 /* SparshWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D8B42BAC191A00AD6181 /* SparshWeatherAppUITests.swift */; };
+		15E2D8B72BAC191A00AD6181 /* SparshWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D8B62BAC191A00AD6181 /* SparshWeatherAppUITestsLaunchTests.swift */; };
+		89498F41131B6B858FD1F208 /* Pods_SparshWeatherApp_SparshWeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407015D19F89269B51B32587 /* Pods_SparshWeatherApp_SparshWeatherAppUITests.framework */; };
+		C758D73BA87619213D3D78CD /* Pods_SparshWeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9506C6DDD7DD3DBC1A5CE1 /* Pods_SparshWeatherAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15E2D8A72BAC191900AD6181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15E2D88E2BAC191700AD6181 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15E2D8952BAC191700AD6181;
+			remoteInfo = SparshWeatherApp;
+		};
+		15E2D8B12BAC191A00AD6181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15E2D88E2BAC191700AD6181 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15E2D8952BAC191700AD6181;
+			remoteInfo = SparshWeatherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		154DDCEB2BAC3E3300F657A9 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		154DDCEE2BAC3E6D00F657A9 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		154DDCF42BAC3EEF00F657A9 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		15E2D8962BAC191700AD6181 /* SparshWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparshWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E2D8992BAC191700AD6181 /* SparshWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparshWeatherAppApp.swift; sourceTree = "<group>"; };
+		15E2D89B2BAC191700AD6181 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15E2D89D2BAC191900AD6181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15E2D8A02BAC191900AD6181 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15E2D8A62BAC191900AD6181 /* SparshWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparshWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E2D8AA2BAC191A00AD6181 /* SparshWeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparshWeatherAppTests.swift; sourceTree = "<group>"; };
+		15E2D8B02BAC191A00AD6181 /* SparshWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparshWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E2D8B42BAC191A00AD6181 /* SparshWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparshWeatherAppUITests.swift; sourceTree = "<group>"; };
+		15E2D8B62BAC191A00AD6181 /* SparshWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparshWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CB9D8D846F66F489BE75E0D /* Pods-SparshWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparshWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-SparshWeatherApp/Pods-SparshWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2E9506C6DDD7DD3DBC1A5CE1 /* Pods_SparshWeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparshWeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		407015D19F89269B51B32587 /* Pods_SparshWeatherApp_SparshWeatherAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparshWeatherApp_SparshWeatherAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		929CDDC1AD47C74EB7A33E3E /* Pods_SparshWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparshWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62EC2E78E453644F373D8E1 /* Pods-SparshWeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparshWeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-SparshWeatherAppTests/Pods-SparshWeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B4C28E7A275C6974B4DAED41 /* Pods-SparshWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparshWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-SparshWeatherApp/Pods-SparshWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		B8DAEE2E0DD07E3819A784EA /* Pods-SparshWeatherApp-SparshWeatherAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparshWeatherApp-SparshWeatherAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SparshWeatherApp-SparshWeatherAppUITests/Pods-SparshWeatherApp-SparshWeatherAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3B84721609C9EDC3FC85462 /* Pods-SparshWeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparshWeatherAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SparshWeatherAppTests/Pods-SparshWeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E02DD736AD00E4C4193C4914 /* Pods-SparshWeatherApp-SparshWeatherAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparshWeatherApp-SparshWeatherAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SparshWeatherApp-SparshWeatherAppUITests/Pods-SparshWeatherApp-SparshWeatherAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15E2D8932BAC191700AD6181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C0F6EC32BD7A1826B943B1 /* Pods_SparshWeatherApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2D8A32BAC191900AD6181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C758D73BA87619213D3D78CD /* Pods_SparshWeatherAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2D8AD2BAC191A00AD6181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89498F41131B6B858FD1F208 /* Pods_SparshWeatherApp_SparshWeatherAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		154DDCEA2BAC3E0E00F657A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				154DDCEB2BAC3E3300F657A9 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		154DDCED2BAC3E5C00F657A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				154DDCEE2BAC3E6D00F657A9 /* WeatherData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		156F2DF52BAC927000AFE677 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D89B2BAC191700AD6181 /* ContentView.swift */,
+				154DDCF42BAC3EEF00F657A9 /* WeatherView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15E2D88D2BAC191700AD6181 = {
+			isa = PBXGroup;
+			children = (
+				15E2D8982BAC191700AD6181 /* SparshWeatherApp */,
+				15E2D8A92BAC191A00AD6181 /* SparshWeatherAppTests */,
+				15E2D8B32BAC191A00AD6181 /* SparshWeatherAppUITests */,
+				15E2D8972BAC191700AD6181 /* Products */,
+				D8FFEDA30EC5E1E919873895 /* Pods */,
+				956BDCF653DF566E4C33811B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15E2D8972BAC191700AD6181 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D8962BAC191700AD6181 /* SparshWeatherApp.app */,
+				15E2D8A62BAC191900AD6181 /* SparshWeatherAppTests.xctest */,
+				15E2D8B02BAC191A00AD6181 /* SparshWeatherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15E2D8982BAC191700AD6181 /* SparshWeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				154DDCED2BAC3E5C00F657A9 /* Model */,
+				154DDCEA2BAC3E0E00F657A9 /* ViewModel */,
+				15E2D8992BAC191700AD6181 /* SparshWeatherAppApp.swift */,
+				15E2D89D2BAC191900AD6181 /* Assets.xcassets */,
+				15E2D89F2BAC191900AD6181 /* Preview Content */,
+				156F2DF52BAC927000AFE677 /* View */,
+			);
+			path = SparshWeatherApp;
+			sourceTree = "<group>";
+		};
+		15E2D89F2BAC191900AD6181 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D8A02BAC191900AD6181 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15E2D8A92BAC191A00AD6181 /* SparshWeatherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D8AA2BAC191A00AD6181 /* SparshWeatherAppTests.swift */,
+			);
+			path = SparshWeatherAppTests;
+			sourceTree = "<group>";
+		};
+		15E2D8B32BAC191A00AD6181 /* SparshWeatherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D8B42BAC191A00AD6181 /* SparshWeatherAppUITests.swift */,
+				15E2D8B62BAC191A00AD6181 /* SparshWeatherAppUITestsLaunchTests.swift */,
+			);
+			path = SparshWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		956BDCF653DF566E4C33811B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				929CDDC1AD47C74EB7A33E3E /* Pods_SparshWeatherApp.framework */,
+				407015D19F89269B51B32587 /* Pods_SparshWeatherApp_SparshWeatherAppUITests.framework */,
+				2E9506C6DDD7DD3DBC1A5CE1 /* Pods_SparshWeatherAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8FFEDA30EC5E1E919873895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CB9D8D846F66F489BE75E0D /* Pods-SparshWeatherApp.debug.xcconfig */,
+				B4C28E7A275C6974B4DAED41 /* Pods-SparshWeatherApp.release.xcconfig */,
+				B8DAEE2E0DD07E3819A784EA /* Pods-SparshWeatherApp-SparshWeatherAppUITests.debug.xcconfig */,
+				E02DD736AD00E4C4193C4914 /* Pods-SparshWeatherApp-SparshWeatherAppUITests.release.xcconfig */,
+				D3B84721609C9EDC3FC85462 /* Pods-SparshWeatherAppTests.debug.xcconfig */,
+				A62EC2E78E453644F373D8E1 /* Pods-SparshWeatherAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15E2D8952BAC191700AD6181 /* SparshWeatherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E2D8BA2BAC191A00AD6181 /* Build configuration list for PBXNativeTarget "SparshWeatherApp" */;
+			buildPhases = (
+				6103A36A0C87E1337B5B9F09 /* [CP] Check Pods Manifest.lock */,
+				15E2D8922BAC191700AD6181 /* Sources */,
+				15E2D8932BAC191700AD6181 /* Frameworks */,
+				15E2D8942BAC191700AD6181 /* Resources */,
+				AB67979B00413D16A20BA19E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SparshWeatherApp;
+			productName = SparshWeatherApp;
+			productReference = 15E2D8962BAC191700AD6181 /* SparshWeatherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15E2D8A52BAC191900AD6181 /* SparshWeatherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E2D8BD2BAC191A00AD6181 /* Build configuration list for PBXNativeTarget "SparshWeatherAppTests" */;
+			buildPhases = (
+				70FC75F886CC6124F5687DAB /* [CP] Check Pods Manifest.lock */,
+				15E2D8A22BAC191900AD6181 /* Sources */,
+				15E2D8A32BAC191900AD6181 /* Frameworks */,
+				15E2D8A42BAC191900AD6181 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15E2D8A82BAC191900AD6181 /* PBXTargetDependency */,
+			);
+			name = SparshWeatherAppTests;
+			productName = SparshWeatherAppTests;
+			productReference = 15E2D8A62BAC191900AD6181 /* SparshWeatherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15E2D8AF2BAC191A00AD6181 /* SparshWeatherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E2D8C02BAC191A00AD6181 /* Build configuration list for PBXNativeTarget "SparshWeatherAppUITests" */;
+			buildPhases = (
+				CB72A87D2488F220B2D3E961 /* [CP] Check Pods Manifest.lock */,
+				15E2D8AC2BAC191A00AD6181 /* Sources */,
+				15E2D8AD2BAC191A00AD6181 /* Frameworks */,
+				15E2D8AE2BAC191A00AD6181 /* Resources */,
+				25986C6211E41842BC700326 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15E2D8B22BAC191A00AD6181 /* PBXTargetDependency */,
+			);
+			name = SparshWeatherAppUITests;
+			productName = SparshWeatherAppUITests;
+			productReference = 15E2D8B02BAC191A00AD6181 /* SparshWeatherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15E2D88E2BAC191700AD6181 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					15E2D8952BAC191700AD6181 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					15E2D8A52BAC191900AD6181 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 15E2D8952BAC191700AD6181;
+					};
+					15E2D8AF2BAC191A00AD6181 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 15E2D8952BAC191700AD6181;
+					};
+				};
+			};
+			buildConfigurationList = 15E2D8912BAC191700AD6181 /* Build configuration list for PBXProject "SparshWeatherApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15E2D88D2BAC191700AD6181;
+			productRefGroup = 15E2D8972BAC191700AD6181 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15E2D8952BAC191700AD6181 /* SparshWeatherApp */,
+				15E2D8A52BAC191900AD6181 /* SparshWeatherAppTests */,
+				15E2D8AF2BAC191A00AD6181 /* SparshWeatherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15E2D8942BAC191700AD6181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E2D8A12BAC191900AD6181 /* Preview Assets.xcassets in Resources */,
+				15E2D89E2BAC191900AD6181 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2D8A42BAC191900AD6181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2D8AE2BAC191A00AD6181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25986C6211E41842BC700326 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparshWeatherApp-SparshWeatherAppUITests/Pods-SparshWeatherApp-SparshWeatherAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparshWeatherApp-SparshWeatherAppUITests/Pods-SparshWeatherApp-SparshWeatherAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SparshWeatherApp-SparshWeatherAppUITests/Pods-SparshWeatherApp-SparshWeatherAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6103A36A0C87E1337B5B9F09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparshWeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70FC75F886CC6124F5687DAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparshWeatherAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB67979B00413D16A20BA19E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparshWeatherApp/Pods-SparshWeatherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparshWeatherApp/Pods-SparshWeatherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SparshWeatherApp/Pods-SparshWeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB72A87D2488F220B2D3E961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparshWeatherApp-SparshWeatherAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15E2D8922BAC191700AD6181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154DDCF52BAC3EEF00F657A9 /* WeatherView.swift in Sources */,
+				15E2D89C2BAC191700AD6181 /* ContentView.swift in Sources */,
+				154DDCEC2BAC3E3300F657A9 /* WeatherViewModel.swift in Sources */,
+				154DDCEF2BAC3E6D00F657A9 /* WeatherData.swift in Sources */,
+				15E2D89A2BAC191700AD6181 /* SparshWeatherAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2D8A22BAC191900AD6181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E2D8AB2BAC191A00AD6181 /* SparshWeatherAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E2D8AC2BAC191A00AD6181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E2D8B72BAC191A00AD6181 /* SparshWeatherAppUITestsLaunchTests.swift in Sources */,
+				15E2D8B52BAC191A00AD6181 /* SparshWeatherAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15E2D8A82BAC191900AD6181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15E2D8952BAC191700AD6181 /* SparshWeatherApp */;
+			targetProxy = 15E2D8A72BAC191900AD6181 /* PBXContainerItemProxy */;
+		};
+		15E2D8B22BAC191A00AD6181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15E2D8952BAC191700AD6181 /* SparshWeatherApp */;
+			targetProxy = 15E2D8B12BAC191A00AD6181 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15E2D8B82BAC191A00AD6181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15E2D8B92BAC191A00AD6181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15E2D8BB2BAC191A00AD6181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB9D8D846F66F489BE75E0D /* Pods-SparshWeatherApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SparshWeatherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = F3X7ZJ83L4;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to provide weather information.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide weather information.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bilal.SparshWeatherApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		15E2D8BC2BAC191A00AD6181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C28E7A275C6974B4DAED41 /* Pods-SparshWeatherApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SparshWeatherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = F3X7ZJ83L4;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to provide weather information.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide weather information.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bilal.SparshWeatherApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		15E2D8BE2BAC191A00AD6181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B84721609C9EDC3FC85462 /* Pods-SparshWeatherAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3X7ZJ83L4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bilal.SparshWeatherApp1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparshWeatherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SparshWeatherApp";
+			};
+			name = Debug;
+		};
+		15E2D8BF2BAC191A00AD6181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62EC2E78E453644F373D8E1 /* Pods-SparshWeatherAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3X7ZJ83L4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bilal.SparshWeatherApp1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparshWeatherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SparshWeatherApp";
+			};
+			name = Release;
+		};
+		15E2D8C12BAC191A00AD6181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DAEE2E0DD07E3819A784EA /* Pods-SparshWeatherApp-SparshWeatherAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3X7ZJ83L4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bilal.SparshWeatherApp1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SparshWeatherApp;
+			};
+			name = Debug;
+		};
+		15E2D8C22BAC191A00AD6181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02DD736AD00E4C4193C4914 /* Pods-SparshWeatherApp-SparshWeatherAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3X7ZJ83L4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bilal.SparshWeatherApp1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SparshWeatherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15E2D8912BAC191700AD6181 /* Build configuration list for PBXProject "SparshWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E2D8B82BAC191A00AD6181 /* Debug */,
+				15E2D8B92BAC191A00AD6181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E2D8BA2BAC191A00AD6181 /* Build configuration list for PBXNativeTarget "SparshWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E2D8BB2BAC191A00AD6181 /* Debug */,
+				15E2D8BC2BAC191A00AD6181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E2D8BD2BAC191A00AD6181 /* Build configuration list for PBXNativeTarget "SparshWeatherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E2D8BE2BAC191A00AD6181 /* Debug */,
+				15E2D8BF2BAC191A00AD6181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E2D8C02BAC191A00AD6181 /* Build configuration list for PBXNativeTarget "SparshWeatherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E2D8C12BAC191A00AD6181 /* Debug */,
+				15E2D8C22BAC191A00AD6181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15E2D88E2BAC191700AD6181 /* Project object */;
+}
